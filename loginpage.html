@@ -1,28 +1,103 @@
 <html>
 <head>
-  <title>LOGIN</title>
+<title>Log In</title>
+<style>
+#title{
+	width:80%;
+	height:6%;
+	border-radius: 0px 0px 50px 50px;
+	background: #77b4d8;
+	box-shadow: 0px 9px 15px #969696;
+	color:white;
+	
+}
+td{
+	width:10%;
+	height:10%;
+	border-radius: 200px 200px 200px 200px;
+	background: #77b4d8;
+	box-shadow: 0px 8px 18px #969696;
+	text-align:center;
+	font-weight:bold;
+	font-size:20;
+}
+h1{
+    text-shadow: 0px 0px 10px black;
+}
+td{
+	color:white;
+    text-shadow: 0px 0px 10px black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	box-shadow: 0px 9px 15px #969696;
+}
+
+li {
+    float: left;
+	font-weight:light;
+	font-size:18;
+	font-family:arial;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #77b4d8;
+}
+input[type=submit] {
+    width: 50%;
+    background-color: #4fdb3f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 50px 50px;
+	width: 30%;
+    cursor: pointer;
+	text-shadow: 0px 0px 10px black;
+	box-shadow: 0px 9px 15px #969696;
+	text-align:center;
+	font-weight:bold;
+	font-size:20;
+}
+</style>
 </head>
 <body>
 <form action='form2.php' method='POST'>
-  <center>
-  <table border="0">
-   <tr>
-  <td>User Name</td>
-  <td>:</td>
-  <td><input type="text" name='username'></td>
- </tr>
- <tr>
-  <td>Password</td>
-  <td>:</td>
-  <td><input type="password" name='pass'></td>
+<center>
+<div id="title"><h1 style="text-align:center">Don Bosco Institute of Technology, Kurla (W)</h1></div>
+<br>
+<ul>
+  <li><a href="">Home</a></li>
+  <li><a href="">Sign Up</a></li>
+  <li><a class="active"href="">Log In</a></li>
+</ul>
+<br><br>
+<table border="0" cellpadding="20" cellspacing="35">
+<tr>
+<td style="border-radius: 50px 50px; width:60%">Username&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name='username' style="border-radius: 0px 50px 50px 0px"></td>
 </tr>
-
- <tr>
- <td colspan="3"><center><input type="submit" name='login' value="LOGIN"></center></td>
- </tr>
+<tr>
+<td style="border-radius: 50px 50px; width:60%">Password&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name='pass' style="border-radius: 0px 50px 50px 0px"></td>
+</tr>
 </table>
+<input type="submit" name='login' value="Log In">
 </center>
-
 </form>
 </body>
 </html>
